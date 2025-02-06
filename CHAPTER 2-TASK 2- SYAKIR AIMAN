@@ -1,0 +1,29 @@
+package assessment;
+import java.util.Scanner;
+public class Task2 {
+	public static void main(String[] args){
+		Scanner baca = new Scanner(System.in);
+		
+		System.out.print("Sila masukkan nama anda: ");
+		String nama = baca.nextLine();
+		
+		System.out.print("Sila masukkan umur anda: ");
+		int umur = baca.nextInt();
+		baca.nextLine();
+		
+		System.out.print("Sila masukkan hobi anda: ");
+		String hobi = baca.nextLine();
+		
+		System.out.print("Sila masukkan makanan kegemaran anda: ");
+		String makananKegemaran = baca.nextLine();
+		
+		System.out.println("\n*** Informasi Pengguna ***");
+		System.out.println("Nama: " + nama);
+		System.out.println("Umur: " + umur);
+		System.out.println("Hobi: " + hobi);
+		System.out.println("Makanan Kegemaran: " + makananKegemaran);
+		
+		baca.close();
+	}
+
+}
