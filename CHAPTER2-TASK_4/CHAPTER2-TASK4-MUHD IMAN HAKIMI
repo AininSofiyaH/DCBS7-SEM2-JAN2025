@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.io.*;
+import java.util.Scanner;
+
+public class AverageMark {
+    public static void main(String[] args) {
+        
+        //declare scanner with variable
+        Scanner in;
+        in = new Scanner(System.in);
+        
+        //declare variable
+        String name, subject;
+        int id, averageMark, test1, test2;
+        
+        //input for personal info
+        System.out.print("Enter your Name: ");
+        name = in.nextLine();
+        
+        System.out.print("Enter your ID (only number): ");
+        id = in.nextInt();
+        in.nextLine();
+        
+        System.out.print("Enter your Subject: ");
+        subject = in.nextLine();
+        
+        System.out.print("Enter your Test 1: ");
+        test1 = in.nextInt();
+        in.nextLine();
+        
+        System.out.print("Enter your test 2: ");
+        test2 = in.nextInt();
+        in.nextLine();
+        
+        //formula for average score
+        averageMark = test1 + test2 / 2;
+        
+        //output for the info 
+        System.out.println("Name: " +name);
+        System.out.println("ID: " +id);
+        System.out.println("Subject: " +subject);
+        System.out.println("Your average mark is: " +averageMark);
+        
+    }
+    
+}
