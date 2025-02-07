@@ -16,7 +16,7 @@ public class AgeCalculator {
         
         // Ask for Enter user's year of birth
         System.out.print("Enter your year of birth: ");
-        int birthYear = scanner.nextInt();
+        int birthYear = read.nextInt();
         
         // Enter the current year
         int currentYear = 2025; 
@@ -27,7 +27,7 @@ public class AgeCalculator {
         // Display the result based on data input
         System.out.println("\nYour age is: " + age + " years old.");
         
-        scanner.close();
+        read.close();
     }
 }
 
