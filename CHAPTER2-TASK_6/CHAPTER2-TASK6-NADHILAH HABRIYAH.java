@@ -14,7 +14,7 @@ public class BMICalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Ask user enter personal infor
+        // Read
         System.out.print("Enter your weight (kg): ");
         double weight = scanner.nextDouble();
         
