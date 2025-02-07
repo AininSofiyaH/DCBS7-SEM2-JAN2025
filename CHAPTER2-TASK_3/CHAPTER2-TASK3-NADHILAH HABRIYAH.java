@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class AgeCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         // Ask for Enter user's year of birth
         System.out.print("Enter your year of birth: ");
