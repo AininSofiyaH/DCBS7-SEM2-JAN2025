@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.util.Scanner;
+
+public class BmiCalc {
+    public static void main(String[] args){
+        
+        //declare scanner
+        Scanner tekan = new Scanner (System.in);
+        
+        //declare variable
+        double berat, tinggi, bmi;
+        
+        //input for user
+        System.out.print("Enter your berat dalam Kg: ");
+        berat = tekan.nextDouble();
+        
+        System.out.print("Enter your tinggi dalam meter: ");
+        tinggi = tekan.nextDouble();
+        
+        // formula for bmi
+        bmi = berat / (tinggi * tinggi);
+        
+        System.out.print("Your bmi is: " +bmi);
+        
+        //if statement with bmi categories, source - theconversation.com body mass index
+        if (bmi < 18.5) {
+            System.out.print("\nYou're kurang berat.");
+        } else if (bmi >= 18.5 && bmi <= 24.9){
+            System.out.print("You're normal");
+        } else if (bmi >= 25 && bmi <= 29.9){
+            System.out.print("You're lebih berat");
+        } else if (bmi >= 30 && bmi <= 34.9) {
+            System.out.print("You're obese I");
+        } else if (bmi >= 35 && bmi <= 39.9) {
+            System.out.print("You're obese II");
+        } else 
+            System.out.print("You're obese III");
+        
+        tekan.close();
+    }
+    
+}
