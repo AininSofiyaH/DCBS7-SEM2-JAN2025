@@ -12,17 +12,17 @@ import java.util.Scanner;
 
 public class Discount {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         // Read the information
         System.out.print("Item Name: ");
-        String item = scanner.nextLine();
+        String item = read.nextLine();
         
         System.out.print("Price: ");
-        double price = scanner.nextDouble();
+        double price = read.nextDouble();
         
         System.out.print("Quantity: ");
-        int quantity = scanner.nextInt();
+        int quantity = read.nextInt();
         
         System.out.print("Discount Rate (%): ");
         double discount = scanner.nextDouble();
@@ -40,6 +40,6 @@ public class Discount {
         System.out.println("Discount: " + discount + "%");
         System.out.println("Price After Discount: " + finalPrice);
         
-        scanner.close();
+        read.close();
     }
 }
