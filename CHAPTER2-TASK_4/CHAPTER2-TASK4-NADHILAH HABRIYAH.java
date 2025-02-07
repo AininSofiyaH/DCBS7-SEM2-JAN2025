@@ -12,23 +12,23 @@ package studentmarks;
 import java.util.Scanner;
 public class StudentMarks {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         // Axk user enter information
         System.out.print("Enter Student Name: ");
-        String name = scanner.nextLine();
+        String name = read.nextLine();
         
         System.out.print("Enter Student ID: ");
-        String id = scanner.nextLine();
+        String id = read.nextLine();
         
         System.out.print("Enter Subject: ");
-        String subject = scanner.nextLine();
+        String subject = read.nextLine();
         
         System.out.print("Enter Test 1 Marks (/100): ");
-        double test1 = scanner.nextDouble();
+        double test1 = read.nextDouble();
         
         System.out.print("Enter Test 2 Marks (/100): ");
-        double test2 = scanner.nextDouble();
+        double test2 = read.nextDouble();
         
         // Calculate average
         double average = (test1 + test2) / 2;
@@ -40,7 +40,7 @@ public class StudentMarks {
         System.out.println("Subject: " + subject);
         System.out.println("Average Marks: " + average);
         
-        scanner.close();
+        read.close();
     }
 }
 
