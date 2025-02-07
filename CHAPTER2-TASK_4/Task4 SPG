@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.pkg4;
+import java.util.Scanner;
+/**
+ *
+ * @author sufi
+ */
+public class Task4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sekolah = new Scanner(System.in);
+        
+        System.out.print("Nama pelajar: ");
+        String nama = sekolah.nextLine();
+        
+        System.out.print("ID Pelajar: ");
+        String idpelajar = sekolah.nextLine();
+        
+        System.out.print("Subjek: ");
+        String subjek = sekolah.nextLine();
+        
+        System.out.print("Markah Test 1 (per 100): ");
+        double markahtest1 = sekolah.nextDouble();
+        
+        System.out.print("Markah Test 2 (per 100): ");
+        double markahtest2 = sekolah.nextDouble();
+        double markahPurata = (markahtest1 + markahtest2)/2;
+        
+        System.out.println("\n========== INFORMASI PELAJAR ==========");
+        System.out.println("Nama: " + nama);
+        System.out.println("ID: " + idpelajar);
+        System.out.println("Subjek: " + subjek);
+        System.out.println("Markah Purata: " + markahPurata);
+    }
+    
+}
