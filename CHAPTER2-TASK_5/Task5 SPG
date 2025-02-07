@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.pkg5;
+import java.util.Scanner;
+/**
+ *
+ * @author USER
+ */
+public class Task5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Nama Barang: ");
+        String namaBarang = scanner.nextLine();
+        
+        System.out.print("Harga: ");
+        double hargaBarang = scanner.nextDouble();
+        
+        System.out.print("Kuantiti: ");
+        int kuantiti = scanner.nextInt();
+        
+        System.out.print("Diskaun rate (%): ");
+        double diskaun = scanner.nextDouble();
+        
+        double totalHarga = hargaBarang * kuantiti;
+        double finalHarga = totalHarga * (1 - diskaun / 100);
+        
+        System.out.printf("\n=====RESIT=====\n");
+        System.out.printf("Nama Barang         : %s\n", namaBarang);
+        System.out.printf("Harga               : %.2f\n", hargaBarang);
+        System.out.printf("Kuantiti            : %d\n", kuantiti);
+        System.out.printf("Total Harga         : %.2f\n", totalHarga);
+        System.out.printf("Diskaun rate        : %.2f%%\n", diskaun);
+        System.out.printf("Final Harga         : %.2f\n", finalHarga);
+        
+        scanner.close();
+    }
+    
+}
