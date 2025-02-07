@@ -46,6 +46,7 @@ public class TaskForToday_5 {
         System.out.println("Total price = RM " +(price) + " x " +(quantity)+ " = RM" + (price * quantity));
         
         //discount rate
+        //user yg masukkan discount rate nnt
         System.out.println("Discount rate (/100) = ");
         discount_rate = read.nextInt();
         
@@ -54,10 +55,12 @@ public class TaskForToday_5 {
         price_aft_discount = harga_diskaun - total_price;
         System.out.println("Price after discount = ");
         */
+
+
         
         //TFT 5 (Chapter 2)
         //klu beli barang 4 dan ke ats je 
-        //klu beli kurang kan x dapat diskaun (harga asal) so xleh pki coding ni
+        //klu beli kurang, kan x dapat diskaun (harga asal) so xleh pki coding ni
         
         String item_name;
         int quant1, quant2; 
@@ -72,6 +75,8 @@ public class TaskForToday_5 {
         System.out.println("3. Minyak    RM 60");
         System.out.println(" * 3% discount per 4 boxes ");
         System.out.println(" ");
+        //discount dah ditetapkan
+        //kna betulkan supaya user boleh beli barang < 4 jugak
         
         System.out.println("What you buy: ");
         item_name = read.nextLine();
