@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.arithmeticprog;
+
+import java.util.Scanner;
+public class Task3 {
+    public static void main (String[] args){
+      Scanner input = new Scanner(System.in);
+      
+      System .out.print("Enter the current year:");
+      int sum1 = input.nextInt();
+      
+      System .out.print("Enter the birth year:");
+      int sum2 = input.nextInt();
+      
+      
+      
+      System .out.println("====================");
+      
+      System .out.println("your age is " + (sum1 - sum2));
+      
+      
+      
+      
+    }
+}
