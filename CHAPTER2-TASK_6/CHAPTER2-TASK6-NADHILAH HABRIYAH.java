@@ -12,14 +12,14 @@ import java.util.Scanner;
 
 public class BMICalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         // Read
         System.out.print("Enter your weight (kg): ");
-        double weight = scanner.nextDouble();
+        double weight = read.nextDouble();
         
         System.out.print("Enter your height (m): ");
-        double height = scanner.nextDouble();
+        double height = read.nextDouble();
         
         // Calculate BMI
         double bmi = weight / (height * height);
@@ -43,7 +43,7 @@ public class BMICalculator {
         System.out.println("Your BMI: " + bmi);
         System.out.println("Category: " + category);
         
-        scanner.close();
+        read.close();
     }
 }
 
