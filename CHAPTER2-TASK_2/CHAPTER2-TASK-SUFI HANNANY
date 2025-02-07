@@ -14,21 +14,20 @@ public class Task {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner input;
-        input = new Scanner(System.in);
+       Scanner data = new Scanner(System.in);
        
-       System.out.print("Enter your name: ");
-       String name = input.nextLine();
+       System.out.print("Name: ");
+       String name = data.nextLine();
        
-       System.out.print("Enter your age: ");
-       int age = input.nextInt();
-       input.nextLine();
+       System.out.print("Age: ");
+       int age = data.nextInt();
+       data.nextLine();
        
-       System.out.print("Enter your hobby: ");
-       String hobby = input.nextLine();
+       System.out.print("Hobby: ");
+       String hobby = data.nextLine();
        
-       System.out.print("Enter your favourite food: ");
-       String favfood = input.nextLine();
+       System.out.print("Favourite food: ");
+       String favfood = data.nextLine();
        
        System.out.println("\n====================");
        System.out.println("  USER INFORMATION  ");
@@ -36,10 +35,10 @@ public class Task {
        System.out.println(" Name           : " + name);
        System.out.println(" Age            : " + age);
        System.out.println(" Hobby          : " + hobby);
-       System.out.println(" Favourite Foos : " + favfood);
-        System.out.println("====================");
+       System.out.println(" Favourite Food : " + favfood);
+       System.out.println("====================");
         
-        input.close();
+        data.close();
     }
     
 }
