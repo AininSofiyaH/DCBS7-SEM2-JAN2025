@@ -14,15 +14,15 @@ public class Task3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         System.out.print("Tahun Lahir: ");
-        int birthYear = scanner.nextInt();
+        int birthYear = read.nextInt();
         int currentYear = 2025;
         int age = currentYear - birthYear;
         
         System.out.println("Anda berumur "  +(age) + " tahun.");
-        scanner.close();
+        read.close();
     }
     
 }
