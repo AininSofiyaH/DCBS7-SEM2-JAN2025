@@ -14,7 +14,7 @@ public class Discount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Enter information
+        // Read the information
         System.out.print("Item Name: ");
         String item = scanner.nextLine();
         
