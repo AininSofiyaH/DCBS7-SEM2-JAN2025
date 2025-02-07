@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.util.Scanner;
+public class ItemCalc {
+    public static void main(String[] args) {
+        
+        // declare scanner 
+        Scanner tekan = new Scanner(System.in);
+
+        // input for name
+        System.out.print("Enter the item name: ");
+        String itemName = tekan.nextLine();
+
+        // input for price
+        System.out.print("Enter the item price: ");
+        double price = tekan.nextDouble();
+
+        // input for quantity
+        System.out.print("Enter the quantity: ");
+        int quantity = tekan.nextInt();
+        tekan.nextLine();
+
+        // input for discount
+        System.out.print("Enter the discount: ");
+        double discount = tekan.nextDouble();
+
+        // formulka for total price
+        double totalPrice = price * quantity;
+
+        // formula for total discount 
+        double discountAmount = totalPrice * (discount / 100);
+
+        // formula for discount applied
+        double priceAfterDiscount = totalPrice - discountAmount;
+
+        // output for total info
+        System.out.println("\n- Item Information -");
+        System.out.println("Item name: " + itemName);
+        System.out.println("Price: RM" + price);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Total price: RM" + totalPrice);
+        System.out.println("Discount: " + discount + "%");
+        System.out.println("Price after discount: RM" + priceAfterDiscount);
+
+        // close scanner function
+        tekan.close();
+    }
+}
+
