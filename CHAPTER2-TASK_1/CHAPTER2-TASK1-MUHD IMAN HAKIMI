@@ -14,15 +14,15 @@ public class ArithmeticProg {
     
     public static void main(String[] args) throws IOException { //IOException are use to check error handling and check exception.
         int num1, num2, sum, sub, divis, multi, mod; //make a variable.
-        Scanner in = new Scanner(System.in); //make a variable for scanner "in".
+        Scanner tekan = new Scanner(System.in); //make a variable for scanner "in".
         
         System.out.println("Task 1.\nEnter your first number: "); //display a message for user to read.
-        num1 = in.nextInt(); //take a variable and make a user input for the number.
-        in.nextLine(); //add a nextLine so that it doesn't have error like adding the other num2 input came out during output.
+        num1 = tekan.nextInt(); //take a variable and make a user input for the number.
+        tekan.nextLine(); //add a nextLine so that it doesn't have error like adding the other num2 input came out during output.
         
         System.out.println("Enter your second number: "); // display a message for second number.
-        num2 = in.nextInt(); //input for number 2.
-        in.nextLine();// make sure no empty string leftover before another nextline executed. 
+        num2 = tekan.nextInt(); //input for number 2.
+        tekan.nextLine();// make sure no empty string leftover before another nextline executed. 
         
         sum = num1 + num2; // formula of sum.
         System.out.println("Your sum is "+sum); //display output for sum.
