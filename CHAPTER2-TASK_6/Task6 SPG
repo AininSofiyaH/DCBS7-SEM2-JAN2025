@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.pkg6;
+import java.util.Scanner;
+/**
+ *
+ * @author sufi
+ */
+public class Task6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner body = new Scanner(System.in);
+        
+        System.out.print("Berat badan (kg):");
+        double berat = body.nextDouble();
+        
+        System.out.print("Tinggi badan (cm): ");
+        double tinggi = body.nextDouble();
+        
+        double BMI = berat / (tinggi * tinggi);
+        
+        System.out.println("\n-----RESULT BMI-----");
+        System.out.println("Berat: " + berat + "kg");
+        System.out.println("Tinggi: " + tinggi + "cm");
+        System.out.println("BMI: " + BMI);
+    }
+    
+}
