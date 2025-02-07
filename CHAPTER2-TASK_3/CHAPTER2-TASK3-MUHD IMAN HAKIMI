@@ -16,20 +16,20 @@ public class AgeCalculator {
     public static void main(String[] args) throws IOException { //IOException just in case 
         
         // scanner class
-        Scanner in;
-        in = new Scanner(System.in);
+        Scanner tekan;
+        tekan = new Scanner(System.in);
         
         // Declare variable
         int birthYear, currentYear, age;
         
         // Question with input
         System.out.print("Enter your Birth Year: ");
-        birthYear = in.nextInt();
-        in.nextLine();
+        birthYear = tekan.nextInt();
+        tekan.nextLine();
         
         System.out.print("Enter your Current Year: ");
-        currentYear = in.nextInt();
-        in.nextLine();
+        currentYear = tekan.nextInt();
+        tekan.nextLine();
         
         age = currentYear - birthYear; // Make a formula for the calculation
         
@@ -39,7 +39,7 @@ public class AgeCalculator {
         System.out.println("Expected no further update unless bug/error.");
         
         // End the function of scanner
-        in.close();
+        tekan.close();
         
     }
 }
