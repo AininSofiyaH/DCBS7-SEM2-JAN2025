@@ -1,0 +1,36 @@
+package com.mycompany.chapter2;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Asus
+ */
+public class Task7 {
+
+    public static void main(String[] args) {
+    System.out.println("\n++VARIABLES - PRE INCREMENT ");
+           System.out.println("The operator is placed before the operand, the value of the operand is incremented first, and then the result is used in the expression. ");
+           System.out.println("for example : ");
+            System.out.println("The value of 'a' is incremented by 1, and then the result is assigned to 'b'. ");
+           
+            System.out.println("\nVARIABLES++ - POST INCREMENT ");
+            System.out.println("The operator is placed after the operand, the value of the operand is used in the expression first, and then it is incremented.");
+            System.out.println("for example : ");
+             System.out.println("The value of 'a' is used in the expression first, and then it is incremented by 1.  ");
+             
+              System.out.println("\n--VARIABLES - PRE DECREMENT ");
+               System.out.println("The operator is placed before the operand, the value of the operand is decremented first, and then the result is used in the expression. ");
+               System.out.println("for example :"); 
+                System.out.println("The value of 'a' is decremented by 1, and then the result is assigned to 'b'. ");
+                
+                 System.out.println("\nVARIABLES-- - POST DECREMENT ");
+                  System.out.println("The operator is placed after the operand, the value of the operand is used in the expression first, and then it is decremented.");
+                   System.out.println("for example :");
+                    System.out.println("The value of 'a' is used in the expression first, and then it is decremented by 1. ");
+            
+}
+}
