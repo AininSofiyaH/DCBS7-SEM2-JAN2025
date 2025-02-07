@@ -12,13 +12,13 @@ import java.util.Scanner;
 
 public class ArithmeticProg3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
 
         // Enter two integers
         System.out.print("Enter the first integer: ");
-        int num1 = scanner.nextInt();
+        int num1 = read.nextInt();
         System.out.print("Enter the second integer: ");
-        int num2 = scanner.nextInt();
+        int num2 = read.nextInt();
 
         // Output results with descriptive format
         System.out.println("\nResults of Arithmetic Operations:");
@@ -33,7 +33,7 @@ public class ArithmeticProg3 {
             System.out.println("Cannot divide by zero.");
         }
 
-        scanner.close();
+        read.close();
     }
 }
 
