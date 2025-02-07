@@ -1,0 +1,54 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.io.*; //import java I/O ke dalam coding dan pastikan ada * bermaksud ada semua dalam satu.
+import java.util.Scanner; //import java scanner untuk baca user input.
+
+public class UserInput {
+    public static void main(String[] args) throws IOException { // IOException are for checking error handling and check for exception. 
+        String name, hobby, favorite_Food, ageQuote, nameQuote, nameQuote2, hobbyQuote, hobbyQuote2, favor_FoodQuote, favor_FoodQuote2; //declare variable.
+        int age; //declare variable.
+        Scanner in = new Scanner(System.in); //declare scanner variable.
+        
+        System.out.print("Merchant: Hello, Traveler. Pardon my rudeness, \nmay I acquire your name?: "); //display input message for name.
+        name = in.nextLine(); //input for name.
+        
+        nameQuote = String.format("You: My name is %s.", name); //make a String.format for desire data types to store. For example, %s for String.
+        System.out.println(nameQuote); // display the message for nameQuote.
+        nameQuote2 = String.format("Merchant: Impressive name! Traveler, %s. Next question.\n", name); //another quote for the merchant version.
+        System.out.print(nameQuote2); // display the message for nameQuote2 merchant version.
+        
+        System.out.print("Merchant: What is your hobby?:"); //display input message for hobby.
+        hobby = in.nextLine(); // input for hobby.
+        
+        hobbyQuote = String.format("%s: My hobby is %s.\n", name, hobby); // 2 similar data types and make sure to specific at the end of quote by adding ", data, data".
+        System.out.print(hobbyQuote); //display the message for hobbyQuote.
+        hobbyQuote2 = String.format("Merchant: I respect your hobby! Traveler, %s.", name); //another quote for the merchant version.
+        System.out.println(hobbyQuote2); // display the message for hobbyQuote2 merchant version.
+        
+        System.out.print("Merchant: Ahh, I forgot to ask your age. May I know?:"); //display message input for age.
+        age = in.nextInt(); //input for age in integer.
+        in.nextLine(); // making sure no empty string were leaves a newline character.
+        
+        ageQuote = String.format("%s: My age is %d.\n", name, age); // 2 different data types and specific it according the types shown.
+        System.out.print(ageQuote); // display the message for ageQuote.
+        System.out.println("Merchant: Good to know."); // display the message for merchant version.
+        
+        System.out.print("Merchant: By chances, \nwhat are your favorite food?:"); //display input message for favorite food.
+        favorite_Food = in.nextLine(); // input for favorite food.
+        
+        favor_FoodQuote = String.format("%s: My favorite food is %s.\n", name, favorite_Food); // the output message for favorite food.
+        System.out.print(favor_FoodQuote); //display the output message for favorite food Quote.
+        favor_FoodQuote2 = String.format("Merchant: I like your tastes! Traveler, %s.\nMerchant: Sadly, I must go and I'll hope we meet again.", name); // the output message for favorite food. Merchant version.
+        System.out.print(favor_FoodQuote2); //display the output message for favorite food Quote merchant version.
+        
+    }
+    
+}
