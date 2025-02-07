@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+// Import the needed built-in package
+import java.io.*;
+import java.util.Scanner;
+
+public class AgeCalculator {
+    public static void main(String[] args) throws IOException { //IOException just in case 
+        
+        // scanner class
+        Scanner in;
+        in = new Scanner(System.in);
+        
+        // Declare variable
+        int birthYear, currentYear, age;
+        
+        // Question with input
+        System.out.print("Enter your Birth Year: ");
+        birthYear = in.nextInt();
+        in.nextLine();
+        
+        System.out.print("Enter your Current Year: ");
+        currentYear = in.nextInt();
+        in.nextLine();
+        
+        age = currentYear - birthYear; // Make a formula for the calculation
+        
+        // Provide Output / calculation result
+        System.out.println("Your age is " + age + " years old.");
+        System.out.println("Day and Month are not included for this calculation.");
+        System.out.println("Expected no further update unless bug/error.");
+        
+        // End the function of scanner
+        in.close();
+        
+    }
+}
