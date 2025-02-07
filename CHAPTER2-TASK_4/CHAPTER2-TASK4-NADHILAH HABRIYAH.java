@@ -14,7 +14,7 @@ public class StudentMarks {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Get user input
+        // Axk user enter information
         System.out.print("Enter Student Name: ");
         String name = scanner.nextLine();
         
