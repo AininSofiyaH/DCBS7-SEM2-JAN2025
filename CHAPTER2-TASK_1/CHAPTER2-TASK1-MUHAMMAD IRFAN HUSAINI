@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.arithmeticprog;
+
+/**
+ *
+ * @author user
+ */
+import java.util.Scanner;
+public class ArithmeticProg {
+    public static void main(String[]args){
+    Scanner read = new Scanner(System.in);
+    
+    System.out.print("masukkan nombor pertama :");
+    int num1 = read.nextInt();
+    
+    System.out.print("masukkan nombor kedua :");
+    int num2 = read.nextInt();
+    
+    System.out.println("tambah: " + ( num1 + num2));
+    System.out.println("tolak: " + ( num1 - num2));
+    System.out.println("darab: " + ( num1 * num2));
+    System.out.println("bahagi: " + ( num1 / num2));
+    System.out.println("modulus: " + ( num1 % num2));
+    
+    
+    }
+}
