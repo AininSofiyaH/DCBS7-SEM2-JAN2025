@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+import java.io.*; //import java input/output ke dalam coding ni dan pastikan ada * bermaksud ada semua dalam satu.
+import java.util.Scanner; //import java util scanner untuk baca user input dari keyboard.
+/**
+ *
+ * @author maste
+ */
+public class ArithmeticProg {
+    
+    public static void main(String[] args) throws IOException { //IOException are use to check error handling and check exception.
+        int num1, num2, sum, sub, divis, multi, mod; //make a variable.
+        Scanner in = new Scanner(System.in); //make a variable for scanner "in".
+        
+        System.out.println("Task 1.\nEnter your first number: "); //display a message for user to read.
+        num1 = in.nextInt(); //take a variable and make a user input for the number.
+        in.nextLine(); //add a nextLine so that it doesn't have error like adding the other num2 input came out during output.
+        
+        System.out.println("Enter your second number: "); // display a message for second number.
+        num2 = in.nextInt(); //input for number 2.
+        in.nextLine();// make sure no empty string leftover before another nextline executed. 
+        
+        sum = num1 + num2; // formula of sum.
+        System.out.println("Your sum is "+sum); //display output for sum.
+        
+        sub = num1 - num2; // formula of subtraction.
+        System.out.println("Your subtraction is "+sub); // display output for subtraction.
+        
+        divis = num1 / num2; // formula of division.
+        System.out.println("Your division is "+divis); // display output for division.
+        
+        multi = num1 / num2; // formula of multiplication.
+        System.out.println("Your multiplication is "+multi); // display output for multiplication.
+        
+        mod = num1 / num2; // formula of modulus.
+        System.out.println("Your modulus is "+mod); // display output for modulus.
+        
+    }
+    
+}
