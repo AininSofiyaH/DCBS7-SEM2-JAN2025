@@ -14,19 +14,19 @@ public class Task5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         
         System.out.print("Nama Barang: ");
-        String namaBarang = scanner.nextLine();
+        String namaBarang = read.nextLine();
         
         System.out.print("Harga: ");
-        double hargaBarang = scanner.nextDouble();
+        double hargaBarang = read.nextDouble();
         
         System.out.print("Kuantiti: ");
-        int kuantiti = scanner.nextInt();
+        int kuantiti = read.nextInt();
         
         System.out.print("Diskaun rate (%): ");
-        double diskaun = scanner.nextDouble();
+        double diskaun = read.nextDouble();
         
         double totalHarga = hargaBarang * kuantiti;
         double finalHarga = totalHarga * (1 - diskaun / 100);
@@ -39,7 +39,7 @@ public class Task5 {
         System.out.printf("Diskaun rate        : %.2f%%\n", diskaun);
         System.out.printf("Final Harga         : %.2f\n", finalHarga);
         
-        scanner.close();
+        read.close();
     }
     
 }
