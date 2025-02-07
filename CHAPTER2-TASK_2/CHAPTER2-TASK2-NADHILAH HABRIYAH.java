@@ -14,7 +14,7 @@ public class personalinformation{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Prompting user for input
+        // Prompting user for Enter name
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
         
