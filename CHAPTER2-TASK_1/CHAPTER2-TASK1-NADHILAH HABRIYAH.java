@@ -14,7 +14,7 @@ public class ArithmeticProg3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input two integers
+        // Enter two integers
         System.out.print("Enter the first integer: ");
         int num1 = scanner.nextInt();
         System.out.print("Enter the second integer: ");
