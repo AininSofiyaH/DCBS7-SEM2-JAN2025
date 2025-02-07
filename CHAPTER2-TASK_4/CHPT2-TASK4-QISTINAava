@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package taskfortoday4;
+import java.util.Scanner;
+
+/**
+ *
+ * @author qistina
+ */
+public class TaskForToday4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String Name, Subject, ID;
+        int Test1, Test2;
+        
+        Scanner read = new Scanner(System.in);
+        
+        System.out.println("Enter your name: ");
+        Name = read.nextLine();
+        
+        System.out.println("Enter your ID: ");
+        ID = read.nextLine();
+        
+        System.out.println("Enter subject: ");
+        Subject = read.nextLine();
+        
+        System.out.println("Enter Test 1 mark (/100): ");
+        Test1 = read.nextInt();
+        
+        System.out.println("Enter test 2 marks (/100): ");
+        Test2 = read.nextInt();
+        
+        read.close();
+        
+        int Mark = (Test1 + Test2 )/2;
+        System.out.println("Average Mark: "+ Mark + "/100");
+        
+    }
+    
+}
