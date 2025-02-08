@@ -18,7 +18,7 @@ public class DiscountCalculation {
         
         // Ask user enter the information
         System.out.println("=====================================");
-        System.out.println("     🛒 WELCOME TO OUR SHOP 🛒");
+        System.out.println("       WELCOME TO OUR SHOP  ");
         System.out.println("=====================================");
         
         System.out.print("Enter Item Name: ");
