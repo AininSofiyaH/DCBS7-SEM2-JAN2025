@@ -6,7 +6,7 @@ package chapter3;
 import java.util.Scanner;
 /**
  *
- * @author User
+ * @author Fatihah
  */
 public class TaskForToday_2 {
     public static void main(String[] args) {
