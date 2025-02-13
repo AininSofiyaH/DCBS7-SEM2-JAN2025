@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task3statement;
+import java.util.Scanner;
+/**
+ *
+ * @author sufi
+ */
+public class Task3Statement {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner read = new Scanner(System.in);
+       
+       System.out.print("Item Name: ");
+       String item = read.nextLine();
+       
+       System.out.print("Price per Item: ");
+       double price = read.nextInt();
+       
+       System.out.print("Quantity: ");
+       int quantity = read.nextInt();
+       
+       double total = price * quantity;
+        System.out.print("Discount color (Red=5, Blue=10, Green=15, Yellow=20, Black=25): ");
+        int discount = switch (read.next().toLowerCase()) {
+            case "red" -> 5;
+            case "blue" -> 10;
+            case "green" -> 15;
+            case "yellow" -> 20;
+            case "black" -> 25;
+            default -> 0;
+        };
+
+        double finalPrice = total - (total * discount / 100);
+        System.out.printf("Final Price: $%.2f\n", finalPrice);
+        read.close();
+    
+      }
+       
+      
+       
+       
+       
+    }
+    
+
