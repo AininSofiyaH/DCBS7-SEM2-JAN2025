@@ -1,0 +1,66 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package discountprogram;
+
+/**
+ *
+ * @author User
+ */
+import java.util.Scanner;
+public class DiscountProgram {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the item name: ");
+        String itemName = scanner.nextLine();
+        
+        System.out.print("Enter the price: ");
+       double pricePerItem = scanner.nextDouble();
+       
+       System.out.print("Enter the quantity: ");
+       int quantity = scanner.nextInt();
+       
+       System.out.println("\nDiscount Menu (Color Code):");
+       System.out.println("1. Red - 10%");
+       System.out.println("2. Blue - 15%");
+       System.out.println("3. Green - 20%");
+       System.out.println("4. Yellow - 25%");
+       System.out.println("5. No Discount");
+       System.out.print("Choose a discount (1-5): ");
+       
+       int choice = scanner.nextInt();
+       double discountRate = 0.0;
+       
+       if(choice == 1) {
+           discountRate = 0.10;
+       } else if(choice == 2) {
+           discountRate = 0.15;
+       } else if(choice == 3) {
+           discountRate = 0.20;
+       } else if(choice == 4) {
+           discountRate = 0.25;
+       } else if(choice == 5) {
+        discountRate = 0.00;
+       } else {
+           System.out.println("Invalid choice! No discount applied.");
+       }
+       
+       double totalPrice = pricePerItem * quantity;
+       double discountAmount = totalPrice * discountRate;
+       double finalPrice = totalPrice - discountAmount;
+        System.out.println("\n--- Purchase Summary ---");
+        System.out.println("Item Name      : " + itemName);
+        System.out.println("Price per Item : RM" + pricePerItem);
+        System.out.println("Quantity       : " + quantity);
+        System.out.println("Total Price    : RM" + totalPrice);
+        System.out.println("Discount Rate  : " + (discountRate * 100) + "%");
+        System.out.println("Final Price    : RM" + finalPrice);
+    }
+    
+}
