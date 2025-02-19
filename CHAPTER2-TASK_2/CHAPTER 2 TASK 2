@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.pkg2;
+
+/**
+ *
+ * @author adria
+ */
+ import java.util.Scanner;
+public class Task2 {
+   
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Please enter your name: ");
+        String name = scanner.nextLine();
+        
+        System.out.print("Please enter your age: ");
+        int age = scanner.nextInt();
+        
+        scanner.nextLine();
+        
+        System.out.print("Please enter state your hobby: ");
+        String hobby = scanner.nextLine();
+        
+        System.out.print("Please tell me your favourite food: ");
+        String favoriteFood = scanner.nextLine();
+      
+        System.out.println("\n ---User's Information--- ");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Hobby: " + hobby);
+        System.out.println("Favorite Food: " + favoriteFood);
+        
+     }
+    
+     }
+    
+    
+
