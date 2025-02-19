@@ -8,38 +8,32 @@ import java.util.Scanner;
  *
  * @author sufi
  */
-public class Task {
+public class Arithmeticpro {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner input;
-        input = new Scanner(System.in);
-       
-       System.out.print("Enter your name: ");
-       String name = input.nextLine();
-       
-       System.out.print("Enter your age: ");
-       int age = input.nextInt();
-       input.nextLine();
-       
-       System.out.print("Enter your hobby: ");
-       String hobby = input.nextLine();
-       
-       System.out.print("Enter your favourite food: ");
-       String favfood = input.nextLine();
-       
-       System.out.println("\n====================");
-       System.out.println("  USER INFORMATION  ");
-       System.out.println("====================");
-       System.out.println(" Name           : " + name);
-       System.out.println(" Age            : " + age);
-       System.out.println(" Hobby          : " + hobby);
-       System.out.println(" Favourite Foos : " + favfood);
-        System.out.println("====================");
+
+       Scanner read = new Scanner(System.in);
         
-        input.close();
+        // masukkan nilai first
+        System.out.print("First number: ");
+        int num1 = read.nextInt();
+        
+        // masukkan nilai
+        System.out.print("Second number: ");
+        int num2 = read.nextInt();
+        
+        // formula
+        System.out.println("\nResults:");
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Substraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        System.out.println("Modulus: " + (num1 % num2));
+        
+        read.close();
     }
     
 }
