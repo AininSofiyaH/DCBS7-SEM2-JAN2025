@@ -3,19 +3,19 @@ import java.util.Scanner;
 		public class task5 
 		{
 		public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner abu = new Scanner(System.in);
     
         System.out.print("Enter Item Name: ");
-        String item = scanner.nextLine();
+        String item = abu.nextLine();
 
         System.out.print("Enter Item Price: ");
-        double price = scanner.nextDouble();
+        double price = abu.nextDouble();
 
         System.out.print("Enter Quantity: ");
-        int quantity = scanner.nextInt();
+        int quantity = abu.nextInt();
 
         System.out.print("Enter Discount Rate (as a percentage): ");
-        double discountrate = scanner.nextDouble();
+        double discountrate = abu.nextDouble();
 
         double totalprice = price * quantity;
         double disc = totalprice * (discountrate / 100);
