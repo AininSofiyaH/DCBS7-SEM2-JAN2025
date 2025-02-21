@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tasklooping2;
+
+/**
+ *
+ * @author sufi
+ */
+public class TaskLooping2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+        int sumFor = 0;
+         for (int z = 1; z <= 10; z++){
+             sumFor += z;
+         }
+         System.out.println("Sum for loop: " + sumFor);
+         
+//
+int sumWhile = 0;
+int i = 1;
+while (i <= 10){
+    sumWhile += i;
+    i++;
+}
+System.out.println("Sum for while: " + sumWhile);
+
+//
+int sumDoWhile = 0;
+int s = 1;
+do{
+    sumDoWhile += s;
+    s++;
+    } while (s <= 10);
+System.out.println("Sum for do while: " + sumDoWhile);
+
+}}
+
+
+         
+         
+
+             
+   
+    
+
