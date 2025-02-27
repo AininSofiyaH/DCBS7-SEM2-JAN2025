@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.looping.pkg1;
+
+/**
+ *
+ * @author aina
+ */
+public class TaskLooping1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        
+        //for
+        /*System.out.println("Printing Numbers from 1 to 10");
+        for(int count = 1; count<=10; count++){
+            System.out.println(count); 
+         
+        
+        //while
+        int count=1;
+        System.out.println("Printing Numbers from 1 to 10");  
+        while(count <= 10){
+            System.out.println(count++);} 
+        
+        
+        //do while loop
+        int count=1;
+        System.out.println("Printing Numbers from 1 to 10");
+        do{
+        System.out.println(count++);}
+        while(count<=10); */
+        
+        
+        
+        
+}}
+    
+
+
+    
+
+
