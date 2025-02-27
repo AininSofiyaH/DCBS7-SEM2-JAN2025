@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+public class Task_2 {
+    public static void main(String[]args){
+        
+        //display info
+        System.out.println("Numbers 1-10");
+        
+        //declare variable
+        int i,j = 1,v = 1;
+        
+        //code loop for, while and do...while
+        for (i =1; i<=10;i++){
+            int sum = i + i;
+            System.out.println("Result for sum of i: " + sum);}
+        
+        while (j <= 10){
+            int sum = j + j;
+            j++;
+            System.out.println("Result while sum of j: " + sum);}
+        
+        do {
+            int sum = v + v;
+            v++;
+            System.out.println("Result do...while of v: " + sum);}
+        while (v <= 10);
+    }
+}
