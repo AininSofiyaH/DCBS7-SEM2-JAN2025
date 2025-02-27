@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+public class Task_4 {
+    public static void main(String[]args){
+        
+        //display num
+        System.out.println("Numbers 1-10");
+        
+        //declare variable
+        int i;
+        int sum = 0;
+        
+        //display message
+        System.out.println("Mengira nombor 1 - 10 bagi square");
+        
+        //loop code structure
+        for (i = 1; i <= 10; i++){
+            int square = i * i; //variable with formula
+            System.out.println(i + "^2 = " + square); //displaying result till condition met
+            sum += square; //
+        }
+        
+        //display output for result
+        System.out.println("Result of the sum of the square from 1 - 10: " +sum);
+    }
+    
+}
