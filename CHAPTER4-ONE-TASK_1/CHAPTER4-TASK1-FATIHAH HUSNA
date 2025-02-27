@@ -6,7 +6,7 @@ package chapter.pkg4;
 
 /**
  *
- * @author User
+ * @author Fatihah
  */
 public class TaskForToday_1 {
     public static void main(String[] args) {
