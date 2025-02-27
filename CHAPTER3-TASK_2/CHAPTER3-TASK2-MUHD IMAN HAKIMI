@@ -1,0 +1,76 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+import java.io.*; //import java input/output ke dalam coding ni dan pastikan ada * bermaksud ada semua dalam satu.
+import java.util.Scanner; //import java util scanner untuk baca user input dari keyboard.
+/**
+ *
+ * @author maste
+ */
+public class ArithmeticProg {
+    
+    @SuppressWarnings("null")
+    public static void main(String[] args) throws IOException { //IOException are use to check error handling and check exception.
+        
+        //declare variable
+        int num1, num2, sum, sub, divis, multi, mod;
+        char choose = 0;
+        Scanner tekan = new Scanner(System.in); //make a variable for scanner "in".
+        
+        //input and question
+        System.out.println("Enter your first number: "); //display a message for user to read.
+        num1 = tekan.nextInt(); //take a variable and make a user input for the number.
+        tekan.nextLine(); //add a nextLine so that it doesn't have error like adding the other num2 input came out during output.
+        
+        System.out.println("Enter your second number: "); // display a message for second number.
+        num2 = tekan.nextInt(); //input for number 2.
+        tekan.nextLine();// make sure no empty string leftover before another nextline executed. 
+        
+        System.out.println("Choose your operator:\n1.sum\n2.sub\n3.divis\n4.multi\n5.mod\nEnter here: ");
+        choose = tekan.nextLine().charAt(0);
+        //formula
+        sum = num1 + num2;
+        sub = num1 - num2;
+        divis = num1 / num2;
+        multi = num1 * num2;
+        mod = num1 % num2;
+        
+        //displaying result depending which operator were assigned
+        switch(choose){
+            case '1':
+                System.out.println("Your sum is " + sum); break;
+            case '2':
+                System.out.println("Your subtraction is " + sub); break;
+            case '3':
+                System.out.println("Your division is " + divis); break;
+            case '4':
+                System.out.println("Your multiplication is " + multi); break;
+            case '5':
+                System.out.println("Your modulus is " + mod); break;
+            default:
+                System.out.println("Error: wrong input..."); break;
+        }
+        
+        tekan.close();
+        /*
+        sum = num1 + num2; // formula of sum.
+        System.out.println("Your sum is "+sum); //display output for sum.
+        
+        sub = num1 - num2; // formula of subtraction.
+        System.out.println("Your subtraction is "+sub); // display output for subtraction.
+        
+        divis = num1 / num2; // formula of division.
+        System.out.println("Your division is "+divis); // display output for division.
+        
+        multi = num1 / num2; // formula of multiplication.
+        System.out.println("Your multiplication is "+multi); // display output for multiplication.
+        
+        mod = num1 / num2; // formula of modulus.
+        System.out.println("Your modulus is "+mod); // display output for modulus.
+        */
+    }
+    
+}
