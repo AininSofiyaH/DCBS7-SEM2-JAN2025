@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tasklooping3;
+
+/**
+ *
+ * @author sufi
+ */
+public class TaskLooping3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int even = 0; //sum of even num
+        int odd = 0; // sum of odd num
+        
+        System.out.println("Even numbers: ");
+        for (int z = 1; z <= 10; z++) { // loop from 1 to 10
+            if (z % 2 == 0){ // check if num is even
+                System.out.print(z + " "); //print even num
+                even += z; // add to even num
+            }
+        }
+        
+        System.out.println("\nOdd numbers: ");
+        for (int z = 1; z <= 10; z++) { // loop from 1 to 10
+            if (z % 2 != 0){ // check if num is odd
+                System.out.print(z + " "); //print even num
+                odd += z; // add to even num
+            }
+        }
+        
+        System.out.println("\nOdd numbers: " + even);
+        System.out.println("Sum of odd numbers: " + odd);
+        
+        
+    }
+    
+}
