@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package task.pkg1;
+
+/**
+ *
+ * @author adria
+ */
+import java.util.Scanner;
+public class ArithemiticProg {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here    
+        Scanner scanner = new Scanner(System.in);
+        //
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+        
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+        System.out.println("\n Result :");
+        
+        int sum = num1 + num2;
+        System.out.println(num1 + " + " + num2 + " = " + sum);
+        
+        int difference = num1 - num2;
+        System.out.println(num1 + " - " + num2 + " = " + difference);
+        
+        int product = num1 * num2;
+        System.out.println(num1 + " * " + num2 + " = " + product);
+        
+        int division =  num1 / num2;
+            System.out.println(num1 + " / " + num2 + " = " + division);
+            
+            int modulus = num1 % num2;
+            System.out.println(num1 + " % " + num2 + " = " + modulus);
+            
+    }
+            
+    
+    }
+    
+
