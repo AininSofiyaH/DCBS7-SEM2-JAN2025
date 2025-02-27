@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tasklooping4;
+
+/**
+ *
+ * @author sufi
+ */
+public class TaskLooping4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int sum = 0;// store the total sum
+        int power = 1; // start w 2^1 (which is 2)
+        
+        System.out.println("Power of 2 from 1 to 10: ");
+        
+        for (int r = 1; r <= 10; r++){
+           System.out.println(" 2^" + r + " = " + power);//print power of 2
+           
+           sum += power; // add the power to the sum
+           power *= 2; // multiply by 2 (to get next power)
+        }
+        // print final sum of all power of 2 (from 1 to 10)
+        System.out.println("Sum of all power of 2 from 1 to 10: " + sum);
+    }
+    
+}
