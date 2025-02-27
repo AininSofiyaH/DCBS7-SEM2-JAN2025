@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+public class Task_1 {
+    public static void main(String[]args){
+        //display info
+        System.out.println("Numbers 1-10");
+        //declare variable
+        int i,j = 1,v = 1;
+        
+        //code loop for, while and do...while
+        for (i =1; i <= 10; i++){
+            System.out.println("Result for " + i);}
+        while (j <= 10){
+            System.out.println("Result while " + j++);}
+        do {
+            System.out.println("Result do...while " + v++);}
+        while (v <= 10);
+        
+    }
+}
