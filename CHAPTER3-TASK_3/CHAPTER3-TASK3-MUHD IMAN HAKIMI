@@ -1,0 +1,78 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.util.Scanner;
+public class ItemCalc {
+    public static void main(String[] args) {
+        
+        // declare scanner 
+        Scanner tekan = new Scanner(System.in);
+        
+        //declare variable
+        int pilih;
+        double discount = 0;
+
+        // input for products info/purchase
+        System.out.print("Enter the item name: ");
+        String itemName = tekan.nextLine();
+
+        System.out.print("Enter the item price: ");
+        double price = tekan.nextDouble();
+
+        System.out.print("Enter the quantity: ");
+        int quantity = tekan.nextInt();
+        tekan.nextLine();
+
+        //discount menu
+        System.out.println("Choose your discount by color: ");
+        System.out.println("1. Merah = 10%");
+        System.out.println("2. Biru = 15%");
+        System.out.println("3. Hijau = 20%");
+        System.out.println("4. Kuning = 25%");
+        System.out.println("Enter the number: ");
+        pilih = tekan.nextInt();
+        
+        //switch for discount rate by choice
+        switch(pilih){
+            case 1:
+                discount = 10; break;
+            case 2:
+                discount = 15; break;
+            case 3:
+                discount = 20; break;
+            case 4:
+                discount = 25; break;
+            default:
+                System.out.println("Wrong input..."); break;
+        }
+
+        // formula total price
+        double totalPrice = price * quantity;
+
+        // formula total discount 
+        double discountAmount = totalPrice * (discount / 100);
+
+        // formula discount applied
+        double priceAfterDiscount = totalPrice - discountAmount;
+
+        // output info
+        System.out.println("\n- Item Information -");
+        System.out.println("Item name: " + itemName);
+        System.out.println("Price: RM" + price);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Total price: RM" + totalPrice);
+        System.out.println("Discount: " + discount + "%");
+        System.out.println("Price after discount: RM" + priceAfterDiscount);
+
+        // close scanner function
+        tekan.close();
+    }
+}
+
