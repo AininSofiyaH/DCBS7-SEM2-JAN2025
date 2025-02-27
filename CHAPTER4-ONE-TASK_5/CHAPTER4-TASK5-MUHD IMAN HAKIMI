@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+public class Task_5 {
+    
+    //create a friendly neighbor formula
+    public static int formula(int x){
+        return x * 11;
+    }
+    
+    public static void main(String[]args){
+        
+        //declare variable
+        int i;
+        
+        //code loop structure
+        for (i = 9; i >= 1; i--){
+            System.out.println(formula(i));
+        }
+        
+    }
+}
