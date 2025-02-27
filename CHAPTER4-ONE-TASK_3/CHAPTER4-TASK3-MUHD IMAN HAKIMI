@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+public class Task_3 {
+    public static void main(String[]args){
+        
+        //display info
+        System.out.println("Numbers 1-10");
+        
+        //declare variable
+        int i,j = 1,v = 1;
+        int sumEven = 0;
+        int sumOdd = 0;
+        
+        //code for sum of Even or Odd
+        System.out.println("The sum either Even or Odd");
+        for (i = 1; i <=10 ;i++){
+            System.out.println("Number: " + i);
+            if (i % 2 == 0){ //condition finding even num
+                sumEven += i; //sum the number, after condition met for even
+                System.out.println("\n" + sumEven + "\n");
+            } else {
+                sumOdd += i; //sum the number, after condition met for odd
+                System.out.println("\n" + sumOdd + "\n");
+            }
+        }
+        //display output
+        System.out.println("The total sum of Even = " + sumEven);
+        System.out.println("The total sum of Odd = " + sumOdd);
+        
+    }
+}
