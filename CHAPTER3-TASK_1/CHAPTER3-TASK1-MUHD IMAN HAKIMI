@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dcbs7.javaproject;
+
+/**
+ *
+ * @author maste
+ */
+import java.io.*;
+import java.util.Scanner;
+
+public class MarkBase {
+    public static void main(String[] args) {
+        
+        //declare scanner variable
+        Scanner tekan = new Scanner (System.in);
+        
+        //declare variable
+        String subject;
+        int markah;
+        
+        //input
+        System.out.print("Enter your Test subject: ");
+        subject = tekan.nextLine();
+        System.out.print("Enter your Test result: ");
+        markah = tekan.nextInt();
+        tekan.nextLine();
+        
+        //if statement, checking for the right statement depends on number been given from input
+        if (markah >= 85){
+            System.out.print("Excellent! you got A");
+        } else if (markah >= 75) {
+            System.out.print("Good job, you got B");
+        } else if (markah >= 65) {
+            System.out.print("Get better next time, you got C");
+        } else if (markah <= 60) {
+            System.out.print("You must retake this specific exam paper, you got F");
+        } else 
+            System.out.print("You funny person");
+        
+        tekan.close();
+        
+    }
+    
+}
