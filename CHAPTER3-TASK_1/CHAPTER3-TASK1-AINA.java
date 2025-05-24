@@ -22,7 +22,7 @@ public class Switchtask1 {
         Scanner Baca = new Scanner(System.in);
         
         System.out.println("Masukkan markah anda : ");
-        Markah = Baca.nextInt(); //comand ni for what
+        Markah = Baca.nextInt();
         
         if (Markah >= 85)
         System.out.println("Gred Cemerlang");
