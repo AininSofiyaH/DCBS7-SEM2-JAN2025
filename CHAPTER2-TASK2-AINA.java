@@ -17,6 +17,7 @@ public class TASK2 {
         // TODO code application logic here
         Scanner scanner = new Scanner(System.in);
 
+        //user masukkan input untuk nama,umur,gobi and fav food
         System.out.print(" Enter nama penuh awak: ");
         String name = scanner.nextLine();
         System.out.print(" Enter umur awak: ");
@@ -26,7 +27,8 @@ public class TASK2 {
         String hobby = scanner.nextLine();
         System.out.print(" Awak selalu suka eat ape: ");
         String favmakanan = scanner.nextLine();
-    
+
+        //output diri yang akan di print
         System.out.println("\n--- Summary diri awak ! -----");
         System.out.println("--- Name: " + name);
         System.out.println("--- Umur: " + umur);
