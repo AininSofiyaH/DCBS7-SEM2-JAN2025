@@ -24,11 +24,11 @@ public class Switchtask1 {
         System.out.println("Masukkan markah anda : ");
         Markah = Baca.nextInt();
         
-        if (Markah >= 85)
-        System.out.println("Gred Cemerlang");
+        if (Markah >= 85) //syarat dia
+        System.out.println("Gred Cemerlang"); //print out kalau markah is more or equal to 85
         
         else if(Markah >= 70)
-        System.out.println("Gred Memuaskan");
+        System.out.println("Gred Memuaskan"); //print output kalau gred lebih or equal to 70
         
         else if(Markah >= 50)
         System.out.println("Gred Lulus");
