@@ -12,10 +12,10 @@ public class switchtask2 {
     public static void main(String[] args) {
        
         
-        double num1,num2;
-        Scanner Baca = new Scanner(System.in);
+        double num1,num2; //declare pemboleh ubah nak simpan nom
+        Scanner Baca = new Scanner(System.in); //create object untuk baca input user
         
-        
+        // mintak input nom dari user
          System.out.println(" First Number ");
          num1 = Baca.nextDouble();
          
@@ -26,7 +26,7 @@ public class switchtask2 {
          int operation = Baca.nextInt();
          
  
-         
+         // gunakan switch untuk jalankan calculation
      switch(operation){
          case 1: System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));break;
          case 2: System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));break;
