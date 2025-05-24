@@ -13,7 +13,8 @@ public class Switchtask3 {
     /**
      * @param args the command line arguments
      */
-    
+
+        //method untuk kira jumlah harga lps discount
         public static double discountProgram(double price, int quantity, double discountRate) {
         double totalPrice = price * quantity;
         double discount = totalPrice * (discountRate / 100);
@@ -21,6 +22,8 @@ public class Switchtask3 {
     }
 
     public static void main(String[] args) {
+
+        //masukkan input nama item, harga dan kuantiti
         Scanner Baca = new Scanner(System.in);
         System.out.print("Enter Nama Item: ");
         String itemName = Baca.nextLine();
@@ -42,7 +45,7 @@ public class Switchtask3 {
         System.out.print("\nPilih kadar diskaun dengan memasukkan nombor yang sesuai: ");
         int discountChoice = Baca.nextInt();
 
-        float discountRate = 0;
+        float discountRate = 0; //guna switch untuk tetapkan discount 
         switch (discountChoice) {
             case 1:
                 discountRate = 10;
@@ -67,7 +70,7 @@ public class Switchtask3 {
         
         double priceAfterDiscount = discountProgram(pricePerItem, quantity, discountRate);
 
-        // tunjuk output dengan lebih teratur
+        // print output dengan lebih teratur
         System.out.println("\n*** Receipt ***");
         System.out.println("Item Name: " + itemName);
         System.out.println("Price per Item: RM" + String.format("%f", pricePerItem));
